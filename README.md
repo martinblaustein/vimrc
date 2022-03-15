@@ -4,25 +4,25 @@ Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
 
 There are two versions:
 
-* **Basic**: If you want something small just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) into your ~/.vimrc and you will have a great basic setup
+* **Basic**: If you want something small just copy [basic.vim](https://github.com/martinblaustein/vimrc/blob/master/vimrcs/basic.vim) into your ~/.vimrc and you will have a great basic setup
 * **Awesome**: This includes a ton of useful plugins, color schemes and configurations
 
 I would of course recommend using the awesome version.
 
 
 ## How to install the Basic version?
-The basic version is basically just one file and no plugins. You can check out [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim).
+The basic version is basically just one file and no plugins. You can check out [basic.vim](https://github.com/martinblaustein/vimrc/blob/master/vimrcs/basic.vim).
 
 This is useful to install on remote servers where you don't need many plugins and you don't do many edits.
 
-	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone git://github.com/martinblaustein/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_basic_vimrc.sh
 
 
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
 
-	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone git://github.com/martinblaustein/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 I also recommend using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960) (it's free and awesome font for writing and programming). The Awesome vimrc is already setup to try to use it
@@ -70,7 +70,7 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [ack.vim](https://github.com/mileszs/ack.vim): Vim plugin for the Perl module / CLI script 'ack'
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim): Fuzzy file, buffer, mru and tag finder. In my config it's mapped to `<Ctrl+F>`, because `<Ctrl+P>` is used by YankRing
 * [mru.vim](https://github.com/vim-scripts/mru.vim): Plugin to manage Most Recently Used (MRU) files. Includes my own fork which adds syntax highlighting to MRU. This plugin can be opened with `<leader+f>`
-* [open_file_under_cursor.vim](https://github.com/amix/open_file_under_cursor.vim): Open file under cursor when pressing `gf`
+* [open_file_under_cursor.vim](https://github.com/martinblaustein/open_file_under_cursor.vim): Open file under cursor when pressing `gf`
 * [zencoding](https://github.com/mattn/emmet-vim): Expanding abbreviation like zen-coding, very useful for editing XML, HTML.
 * [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object): Defines a new text object representing lines of code at the same indent level. Useful for python/vim scripts
 * [taglist.vim](https://github.com/vim-scripts/taglist.vim): Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
@@ -78,8 +78,8 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [vim-expand-region](https://github.com/terryma/vim-expand-region): Allows you to visually select increasingly larger regions of text using the same key combination.
 * [vim-airline](https://github.com/bling/vim-airline): Lean & mean status/tabline for vim that's light as air (replacing powerline)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): A Git wrapper so awesome, it should be illegal
-* [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2): 
-Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room [Read more here](http://amix.dk/blog/post/19744)
+* [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/martinblaustein/vim-zenroom2): 
+Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room [Read more here](http://martinblaustein.dk/blog/post/19744)
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
 
 
@@ -144,7 +144,7 @@ Managing the [NERD Tree](https://github.com/scrooloose/nerdtree) plugin:
     map <leader>nb :NERDTreeFromBookmark 
     map <leader>nf :NERDTreeFind<cr>
 
-[goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2) lets you only focus on one thing at a time. It removes all the distractions and centers the content. It has a special look when editing Markdown, reStructuredText and textfiles. It only has one mapping.
+[goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/martinblaustein/vim-zenroom2) lets you only focus on one thing at a time. It removes all the distractions and centers the content. It has a special look when editing Markdown, reStructuredText and textfiles. It only has one mapping.
 
     map <leader>z :Goyo<cr>
 
@@ -315,12 +315,12 @@ Vimscript mappings:
 
 ## Useful blog tips regarding my Vim setup
 
-* [Vim: Annotate strings with gettext (the macro way)](http://amix.dk/blog/post/19678#Vim-Annotate-strings-with-gettext-the-macro-way)
-* [vimgrep: Searching through multiple file extensions](http://amix.dk/blog/post/19672#vimgrep-Searching-through-multiple-file-extensions)
-* [Filtering through vimgrep results using regular expressions](http://amix.dk/blog/post/19666#Filtering-through-vimgrep-results-using-regular-expressions)
-* [PeepOpen - File auto completion for Mac editors](http://amix.dk/blog/post/19601#PeepOpen-File-auto-completion-for-Mac-editors)
-* [Vim 7.3: Persistent undo and encryption!](http://amix.dk/blog/post/19548#Vim-7-3-Persistent-undo-and-encryption)
-* [Vim tips: Visual Search](http://amix.dk/blog/post/19334#Vim-tips-Visual-Search)
-* [Folding in Vim](http://amix.dk/blog/post/19132#Folding-in-Vim)
+* [Vim: Annotate strings with gettext (the macro way)](http://martinblaustein.dk/blog/post/19678#Vim-Annotate-strings-with-gettext-the-macro-way)
+* [vimgrep: Searching through multiple file extensions](http://martinblaustein.dk/blog/post/19672#vimgrep-Searching-through-multiple-file-extensions)
+* [Filtering through vimgrep results using regular expressions](http://martinblaustein.dk/blog/post/19666#Filtering-through-vimgrep-results-using-regular-expressions)
+* [PeepOpen - File auto completion for Mac editors](http://martinblaustein.dk/blog/post/19601#PeepOpen-File-auto-completion-for-Mac-editors)
+* [Vim 7.3: Persistent undo and encryption!](http://martinblaustein.dk/blog/post/19548#Vim-7-3-Persistent-undo-and-encryption)
+* [Vim tips: Visual Search](http://martinblaustein.dk/blog/post/19334#Vim-tips-Visual-Search)
+* [Folding in Vim](http://martinblaustein.dk/blog/post/19132#Folding-in-Vim)
 * [
-Zen room for Vim: Focusing only on the essential](http://amix.dk/blog/post/19744#zenroom-for-Vim-Focsuing-only-on-the-essential)
+Zen room for Vim: Focusing only on the essential](http://martinblaustein.dk/blog/post/19744#zenroom-for-Vim-Focsuing-only-on-the-essential)
