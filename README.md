@@ -9,23 +9,24 @@ There are two versions:
 
 I would of course recommend using the awesome version.
 
+## How to installi it?
+* Install vundle
+	* git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-## How to install the Basic version?
-The basic version is basically just one file and no plugins. You can check out [basic.vim](https://github.com/martinblaustein/vimrc/blob/master/vimrcs/basic.vim).
+* Clone the app
+	* 	git clone https://github.com/martinblaustein/vimrc.git ~/.vim_runtime
 
-This is useful to install on remote servers where you don't need many plugins and you don't do many edits.
+### Basic
+The basic version is basically just one file and no plugins
 
-	git clone git://github.com/martinblaustein/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_basic_vimrc.sh
+* sh ~/.vim_runtime/install_basic_vimrc.sh
 
 
-## How to install the Awesome version?
-The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
+### Awesome
+* sh ~/.vim_runtime/install_awesome_vimrc.sh
 
-	git clone git://github.com/martinblaustein/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_awesome_vimrc.sh
-
-I also recommend using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960) (it's free and awesome font for writing and programming). The Awesome vimrc is already setup to try to use it
+### Python
+* sh ~/.vim_runtime/install_python_vimrc.sh
 
 ## How to install on Windows?
 
@@ -38,24 +39,6 @@ Simply just do a git rebase!
 
     cd ~/.vim_runtime
     git pull --rebase
-
-
-## Some screenshots
-
-Colors when editing a Python file:
-![Screenshot 1](http://files1.wedoist.com/e952fdb343b1e617b90d256e474d0370/as/screenshot_1.png)
-
-Opening recently opened files [mru.vim](https://github.com/vim-scripts/mru.vim):
-![Screenshot 2](http://files1.wedoist.com/1967b0e48af40e513d1a464e08196990/as/screenshot_2.png)
-
-[NERD Tree](https://github.com/scrooloose/nerdtree) plugin in a terminal window:
-![Screenshot 3](http://files1.wedoist.com/b1509d7ed9e9f357e8d04797f9fad67b/as/screenshot3.png)
-
-This vimrc even works on Windows!
-![Screenshot 4](http://files1.wedoist.com/4e85163d97b81422240c822c82022f2f/as/screenshot_4.png)
-
-Distraction free mode (using goyo.vim and vim-zenroom2):
-![Screenshot 5](https://d2dq6e731uoz0t.cloudfront.net/a5182977c3d6c2a6cd3f9e97398ca8ca/as/zen_mode.jpg)
 
 
 ## Included Plugins
