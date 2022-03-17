@@ -2,31 +2,30 @@
 
 Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
 
-There are two versions:
+There are three versions:
 
 * **Basic**: If you want something small just copy [basic.vim](https://github.com/martinblaustein/vimrc/blob/master/vimrcs/basic.vim) into your ~/.vimrc and you will have a great basic setup
 * **Awesome**: This includes a ton of useful plugins, color schemes and configurations
+* **Python**: Your custome python IDE
 
-I would of course recommend using the awesome version.
 
 ## How to installi it?
-* Install vundle
-	* git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+1. Install vundle: _git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim_
 
-* Clone the app
-	* 	git clone https://github.com/martinblaustein/vimrc.git ~/.vim_runtime
+2. Clone the app: _git clone https://github.com/martinblaustein/vimrc.git ~/.vim_runtime_
+
 
 ### Basic
 The basic version is basically just one file and no plugins
 
-* sh ~/.vim_runtime/install_basic_vimrc.sh
+	sh ~/.vim_runtime/install_basic_vimrc.sh
 
 
 ### Awesome
-* sh ~/.vim_runtime/install_awesome_vimrc.sh
+	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ### Python
-* sh ~/.vim_runtime/install_python_vimrc.sh
+	sh ~/.vim_runtime/install_python_vimrc.sh
 
 ## How to install on Windows?
 
